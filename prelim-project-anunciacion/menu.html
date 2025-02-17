@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crumbl Cookies - Menu</title>
+  <style>
+    /* Base CSS (same as home page for consistent styling) */
+    :root {
+      --primary-color: #f6a8d4; /* Soft pink */
+      --secondary-color: #9b4d96; /* Purple */
+      --light-gray: #f8f8f8; /* Light gray background */
+      --dark-text: #333; /* Dark text color */
+      --font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      background-color: var(--light-gray);
+      color: var(--dark-text);
+    }
+
+    h1, h2, h3 {
+      color: var(--dark-text);
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-left: 1.5rem;
+    }
+
+    .navbar a:hover {
+      color: var(--secondary-color);
+    }
+
+    /* Page Header */
+    .page-header {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .page-header h1 {
+      font-size: 2.5rem;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    /* Menu Section */
+    .menu-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .menu-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .menu-card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .menu-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-card .order-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .menu-card .order-button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="home.html">Crumbl Cookies</a>
+    </div>
+    <div class="links">
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order Now</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1>Our Menu</h1>
+    <p>Discover our delicious freshly baked cookies made with love!</p>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <div class="menu-card">
+      <img src="https://crumbl.video/cdn-cgi/image/width=750,format=auto,quality=80/https://crumbl.video/7d75a321-0028-4012-a0b3-1b3ed429fe76_SemiSweetChocolateChunk_OverheadAeria_NoShadow_TECH.png" alt="Semi-Sweet Chocolate Chunk">
+      <h3>Semi-Sweet Chocolate Chunk</h3>
+      <p>Chocolate chip, but make it chunky—a delicious cookie filled with irresistible semi-sweet chocolate chunks and a sprinkle of flaky sea salt.</p>
+      <a href="#" class="order-button">Order Now</a>
+    </div>
+    <div class="menu-card">
+      <img src="https://crumbl.video/cdn-cgi/image/width=640,format=auto,quality=80/https://crumbl.video/33dceb68-5ec3-4e06-847a-2b68d34f00b6_MallowSandwichftOreo_FlyingAerial_TECH.png" alt="Mallow Sandwich ft. OREO">
+      <h3>Mallow Sandwich ft. OREO</h3>
+      <p>A fluffy, creamy center with brownie pieces sandwiched between two chocolate cookies made with OREO® cookie pieces.</p>
+      <a href="#" class="order-button">Order Now</a>
+    </div>
+    <div class="menu-card">
+      <img src="https://crumbl.video/cdn-cgi/image/width=750,format=auto,quality=80/https://crumbl.video/71b559c7-f68c-4a12-9239-093a62a63cfc_SaltedCaramelCheesecakeDessert_FlyingAerial_TECH.png" alt="Salted Caramel Cheesecake">
+      <h3>Salted Caramel Cheesecake</h3>
+      <p>A caramel cheesecake baked over a buttery graham cracker crust, topped with a drizzle of caramel, a sprinkle of sea salt, and whipped cream.</p>
+      <a href="#" class="order-button">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Crumbl Cookies. All Rights Reserved.</p>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQs</a>
+    </div>
+  </footer>
+</body>
+</html>

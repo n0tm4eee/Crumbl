@@ -1,0 +1,215 @@
+<style>
+    :host {
+      --primary-color: #f6a8d4; /* Soft pink */
+      --secondary-color: #9b4d96; /* Purple */
+      --light-gray: #f397ed; /* Light gray background */
+      --dark-text: #f6a8d4; /* Dark text color */
+      --font-family: "Montserrat", sans-serif;
+      box-sizing: border-box;
+      font-family: var(--font-family);
+    }
+  
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-pink);
+      color: var(--dark-text);
+    }
+  
+    h1, h2, h3 {
+      font-family: "Montserrat", sans-serif;
+      color: var(--dark-text);
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--dark-text);
+    }
+  
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary-color);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      margin-left: 1.5rem;
+    }
+  
+    .navbar a:hover {
+      color: var(--secondary-color);
+    }
+  
+    /* Hero Section */
+    .hero-section {
+      background: url("https://example.com/hero-image.jpg") no-repeat center center;
+      background-size: cover;
+      height: 80vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+  
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+      padding: 2rem;
+      border-radius: 10px;
+    }
+  
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .cta-button {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 1rem 2.5rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .cta-button:hover {
+      background-color: #b34f9a;
+    }
+  
+    /* Cookie Images Section */
+    .cookie-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
+    .cookie-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  
+    .cookie-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .cookie-card h3 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  
+    .cookie-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .cookie-card .order-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+  
+    .cookie-card .order-button:hover {
+      background-color: var(--secondary-color);
+    }
+  
+    /* Footer */
+    .footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+    }
+  
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+  </style>
+  
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Crumbl Cookies</a>
+      </div>
+      <div class="links">
+        <a href="/home/home.component.html">Menu</a>
+        <a href="/product/product.component.html">Order Now</a>
+        <a href="/about/about.component.html">About</a>
+        <a href="/pagenotfound/pagenotfound.component.html">Contact</a>
+      </div>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Freshly Baked Cookies Delivered Daily</h1>
+        <p>Indulge in the best cookies you have ever tasted. Order now and enjoy!</p>
+        <a href="#" class="cta-button">Order Now</a>
+      </div>
+    </section>
+  
+    <!-- Cookie Images Section -->
+    <section class="cookie-section">
+      <div class="cookie-card">
+        <img src="https://crumbl.video/cdn-cgi/image/width=750,format=auto,quality=80/https://crumbl.video/7d75a321-0028-4012-a0b3-1b3ed429fe76_SemiSweetChocolateChunk_OverheadAeria_NoShadow_TECH.png" alt="Cookie 1">
+        <h3>Semi-Sweet Chocolate Chunk</h3>
+        <p>Chocolate chip, but make it chunky—a delicious cookie filled with irresistible semi-sweet chocolate chunks and a sprinkle of flaky sea salt.</p>
+        <a href="#" class="order-button">Order Now</a>
+      </div>
+      <div class="cookie-card">
+        <img src="https://crumbl.video/cdn-cgi/image/width=640,format=auto,quality=80/https://crumbl.video/33dceb68-5ec3-4e06-847a-2b68d34f00b6_MallowSandwichftOreo_FlyingAerial_TECH.png" alt="Cookie 2">
+        <h3>Mallow Sandwich ft. OREO</h3>
+        <p>A fluffy, creamy center with brownie pieces sandwiched between two chocolate cookies made with OREO® cookie pieces. OREO is a trademark of Mondelēz International group, used with permission.</p>
+        <a href="#" class="order-button">Order Now</a>
+      </div>
+      <div class="cookie-card">
+        <img src="https://crumbl.video/cdn-cgi/image/width=750,format=auto,quality=80/https://crumbl.video/71b559c7-f68c-4a12-9239-093a62a63cfc_SaltedCaramelCheesecakeDessert_FlyingAerial_TECH.png" alt="Cookie 3">
+        <h3>Salted Caramel Cheesecake</h3>
+        <p>A caramel cheesecake baked over a buttery graham cracker crust, then topped with a drizzle of caramel, a sprinkle of sea salt, and a dollop of whipped cream.</p>
+        <a href="#" class="order-button">Order Now</a>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Crumbl Cookies. All Rights Reserved.</p>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">FAQs</a>
+      </div>
+    </footer>
+  </body>
+  
